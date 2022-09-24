@@ -1,0 +1,218 @@
+[
+  {
+    "name": "Breakfast",
+    "category": "food",
+    "price": 3.89,
+    "currency": "USD",
+    "image": {
+      "src": "images/breakfast.jpg",
+      "alt": "breakfast"
+    },
+    "bestseller": true,
+    "featured": false,
+    "details": null
+  },
+  {
+    "name": "Burger",
+    "category": "food",
+    "price": 93.89,
+    "currency": "USD",
+    "image": {
+      "src": "images/burger.jpg",
+      "alt": "burger"
+    },
+    "bestseller": false,
+    "featured": false,
+    "details": null
+  },
+  {
+    "name": "Car",
+    "category": "premium",
+    "price": 93.89,
+    "currency": "USD",
+    "image": {
+      "src": "images/car.jpg",
+      "alt": "car"
+    },
+    "bestseller": false,
+    "featured": false,
+    "details": null
+  },
+  {
+    "name": "Cat",
+    "category": "pets",
+    "price": 93.89,
+    "currency": "USD",
+    "image": {
+      "src": "images/cat.jpg",
+      "alt": "cat"
+    },
+    "bestseller": false,
+    "featured": false,
+    "details": null
+  },
+  {
+    "name": "Dogo",
+    "category": "pets",
+    "price": 93.89,
+    "currency": "USD",
+    "image": {
+      "src": "images/dogo.jpg",
+      "alt": "dogo"
+    },
+    "bestseller": false,
+    "featured": false,
+    "details": null
+  },
+  {
+    "name": "Man",
+    "category": "people",
+    "price": 93.89,
+    "currency": "USD",
+    "image": {
+      "src": "images/man.jpg",
+      "alt": "man"
+    },
+    "bestseller": false,
+    "featured": false,
+    "details": null
+  },
+  {
+    "name": "Mountains",
+    "category": "nature",
+    "price": 93.89,
+    "currency": "USD",
+    "image": {
+      "src": "images/mountains.jpg",
+      "alt": "mountains"
+    },
+    "bestseller": false,
+    "featured": false,
+    "details": null
+  },
+  {
+    "name": "New Building",
+    "category": "cities",
+    "price": 93.89,
+    "currency": "USD",
+    "image": {
+      "src": "images/new-building.jpg",
+      "alt": "new-building"
+    },
+    "bestseller": false,
+    "featured": false,
+    "details": null
+  },
+  {
+    "name": "Old Building",
+    "category": "cities",
+    "price": 93.89,
+    "currency": "USD",
+    "image": {
+      "src": "images/old-building.jpg",
+      "alt": "old-building"
+    },
+    "bestseller": false,
+    "featured": false,
+    "details": null
+  },
+  {
+    "name": "Red Forest",
+    "category": "nature",
+    "price": 93.89,
+    "currency": "USD",
+    "image": {
+      "src": "images/red-forest.jpg",
+      "alt": "red-forest"
+    },
+    "bestseller": false,
+    "featured": false,
+    "details": null
+  },
+  {
+    "name": "Shoes",
+    "category": "nature",
+    "price": 93.89,
+    "currency": "USD",
+    "image": {
+      "src": "images/shoes.jpg",
+      "alt": "shoes"
+    },
+    "bestseller": false,
+    "featured": false,
+    "details": null
+  },
+  {
+    "name": "Water Street",
+    "category": "nature",
+    "price": 93.89,
+    "currency": "USD",
+    "image": {
+      "src": "images/water-street.jpg",
+      "alt": "water-street"
+    },
+    "bestseller": false,
+    "featured": false,
+    "details": null
+  },
+  {
+    "name": "Window City",
+    "category": "nature",
+    "price": 93.89,
+    "currency": "USD",
+    "image": {
+      "src": "images/window-city.jpg",
+      "alt": "window-city"
+    },
+    "bestseller": false,
+    "featured": false,
+    "details": null
+  },
+  {
+    "name": "Woman",
+    "category": "nature",
+    "price": 93.89,
+    "currency": "USD",
+    "image": {
+      "src": "images/woman.jpg",
+      "alt": "woman"
+    },
+    "bestseller": false,
+    "featured": false,
+    "details": null
+  },
+  {
+    "name": "Fire Girl",
+    "category": "people",
+    "price": 93.89,
+    "currency": "USD",
+    "image": {
+      "src": "images/fire-girl.jpg",
+      "alt": "fire-girl"
+    },
+    "bestseller": false,
+    "featured": true,
+    "details": {
+      "dimmentions": {
+        "width": 1020,
+        "height": 1020
+      },
+      "size": 15000,
+      "description": "So how did the classical Latin become so incoherent? According to McClintock, a 15th century typesetter likely",
+      "recommendations": [
+        {
+          "src": "images/red-forest.jpg",
+          "alt": "red-forest"
+        },
+        {
+          "src": "images/shoes.jpg",
+          "alt": "shoes"
+        },
+        {
+          "src": "images/dogo.jpg",
+          "alt": "dogo"
+        }
+      ]
+    }
+  }
+]
