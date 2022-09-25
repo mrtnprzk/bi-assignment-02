@@ -5,7 +5,7 @@
     "price": 3.89,
     "currency": "USD",
     "image": {
-      "src": "images/breakfast.jpg",
+      "src": "/images/breakfast.jpg",
       "alt": "breakfast"
     },
     "bestseller": true,
@@ -18,7 +18,7 @@
     "price": 93.89,
     "currency": "USD",
     "image": {
-      "src": "images/burger.jpg",
+      "src": "/images/burger.jpg",
       "alt": "burger"
     },
     "bestseller": false,
@@ -31,7 +31,7 @@
     "price": 93.89,
     "currency": "USD",
     "image": {
-      "src": "images/car.jpg",
+      "src": "/images/car.jpg",
       "alt": "car"
     },
     "bestseller": false,
@@ -44,7 +44,7 @@
     "price": 93.89,
     "currency": "USD",
     "image": {
-      "src": "images/cat.jpg",
+      "src": "/images/cat.jpg",
       "alt": "cat"
     },
     "bestseller": false,
@@ -57,7 +57,7 @@
     "price": 93.89,
     "currency": "USD",
     "image": {
-      "src": "images/dogo.jpg",
+      "src": "/images/dogo.jpg",
       "alt": "dogo"
     },
     "bestseller": false,
@@ -70,7 +70,7 @@
     "price": 93.89,
     "currency": "USD",
     "image": {
-      "src": "images/man.jpg",
+      "src": "/images/man.jpg",
       "alt": "man"
     },
     "bestseller": false,
@@ -83,7 +83,7 @@
     "price": 93.89,
     "currency": "USD",
     "image": {
-      "src": "images/mountains.jpg",
+      "src": "/images/mountains.jpg",
       "alt": "mountains"
     },
     "bestseller": false,
@@ -96,7 +96,7 @@
     "price": 93.89,
     "currency": "USD",
     "image": {
-      "src": "images/new-building.jpg",
+      "src": "/images/new-building.jpg",
       "alt": "new-building"
     },
     "bestseller": false,
@@ -109,7 +109,7 @@
     "price": 93.89,
     "currency": "USD",
     "image": {
-      "src": "images/old-building.jpg",
+      "src": "/images/old-building.jpg",
       "alt": "old-building"
     },
     "bestseller": false,
@@ -122,7 +122,7 @@
     "price": 93.89,
     "currency": "USD",
     "image": {
-      "src": "images/red-forest.jpg",
+      "src": "/images/red-forest.jpg",
       "alt": "red-forest"
     },
     "bestseller": false,
@@ -135,7 +135,7 @@
     "price": 93.89,
     "currency": "USD",
     "image": {
-      "src": "images/shoes.jpg",
+      "src": "/images/shoes.jpg",
       "alt": "shoes"
     },
     "bestseller": false,
@@ -148,7 +148,7 @@
     "price": 93.89,
     "currency": "USD",
     "image": {
-      "src": "images/water-street.jpg",
+      "src": "/images/water-street.jpg",
       "alt": "water-street"
     },
     "bestseller": false,
@@ -161,7 +161,7 @@
     "price": 93.89,
     "currency": "USD",
     "image": {
-      "src": "images/window-city.jpg",
+      "src": "/images/window-city.jpg",
       "alt": "window-city"
     },
     "bestseller": false,
@@ -174,7 +174,7 @@
     "price": 93.89,
     "currency": "USD",
     "image": {
-      "src": "images/woman.jpg",
+      "src": "/images/woman.jpg",
       "alt": "woman"
     },
     "bestseller": false,
@@ -187,7 +187,7 @@
     "price": 93.89,
     "currency": "USD",
     "image": {
-      "src": "images/fire-girl.jpg",
+      "src": "/images/fire-girl.jpg",
       "alt": "fire-girl"
     },
     "bestseller": false,
@@ -201,15 +201,15 @@
       "description": "So how did the classical Latin become so incoherent? According to McClintock, a 15th century typesetter likely",
       "recommendations": [
         {
-          "src": "images/red-forest.jpg",
+          "src": "/images/red-forest.jpg",
           "alt": "red-forest"
         },
         {
-          "src": "images/shoes.jpg",
+          "src": "/images/shoes.jpg",
           "alt": "shoes"
         },
         {
-          "src": "images/dogo.jpg",
+          "src": "/images/dogo.jpg",
           "alt": "dogo"
         }
       ]

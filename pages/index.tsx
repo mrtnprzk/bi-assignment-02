@@ -1,10 +1,12 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import storeProducts from '../data/products.json';
+import FeaturedSection from "../components/FeaturedSection";
+import Header from "../components/Header";
+import ProductsSection from "../components/ProductsSection";
 
 const Home: NextPage = () => {
   return (
-    <div>
+    <>
       <Head>
         <title>BOHEMIA INTERACTIVE</title>
         <meta
@@ -13,10 +15,10 @@ const Home: NextPage = () => {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      {storeProducts.map(product => (
-        <img key={product.name} src={product.image.src} alt={product.image.alt} />
-      ))}
-    </div>
+      <Header/>
+      <FeaturedSection/>
+      <ProductsSection/>
+    </>
   );
 };
 

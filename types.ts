@@ -9,7 +9,7 @@ export interface Products {
   };
   bestseller: boolean;
   featured: boolean;
-  details: {
+  details?: {
     dimmentions: {
       width: number;
       height: number;
