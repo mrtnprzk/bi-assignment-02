@@ -15,7 +15,7 @@
   {
     "name": "Burger",
     "category": "food",
-    "price": 93.89,
+    "price": 29.89,
     "currency": "USD",
     "image": {
       "src": "/images/burger.jpg",
@@ -26,9 +26,22 @@
     "details": null
   },
   {
+    "name": "Business",
+    "category": "premium",
+    "price": 99.89,
+    "currency": "USD",
+    "image": {
+      "src": "/images/business.jpg",
+      "alt": "business"
+    },
+    "bestseller": false,
+    "featured": false,
+    "details": null
+  },
+  {
     "name": "Car",
     "category": "premium",
-    "price": 93.89,
+    "price": 299.89,
     "currency": "USD",
     "image": {
       "src": "/images/car.jpg",
@@ -41,7 +54,7 @@
   {
     "name": "Cat",
     "category": "pets",
-    "price": 93.89,
+    "price": 13.89,
     "currency": "USD",
     "image": {
       "src": "/images/cat.jpg",
@@ -54,7 +67,7 @@
   {
     "name": "Dogo",
     "category": "pets",
-    "price": 93.89,
+    "price": 23.89,
     "currency": "USD",
     "image": {
       "src": "/images/dogo.jpg",
@@ -65,9 +78,35 @@
     "details": null
   },
   {
+    "name": "Donuts",
+    "category": "food",
+    "price": 113.89,
+    "currency": "USD",
+    "image": {
+      "src": "/images/donuts.jpg",
+      "alt": "donuts"
+    },
+    "bestseller": false,
+    "featured": false,
+    "details": null
+  },
+  {
+    "name": "Granny",
+    "category": "people",
+    "price": 193.89,
+    "currency": "USD",
+    "image": {
+      "src": "/images/granny.jpg",
+      "alt": "granny"
+    },
+    "bestseller": false,
+    "featured": false,
+    "details": null
+  },
+  {
     "name": "Man",
     "category": "people",
-    "price": 93.89,
+    "price": 43.89,
     "currency": "USD",
     "image": {
       "src": "/images/man.jpg",
@@ -80,7 +119,7 @@
   {
     "name": "Mountains",
     "category": "nature",
-    "price": 93.89,
+    "price": 293.89,
     "currency": "USD",
     "image": {
       "src": "/images/mountains.jpg",
@@ -93,7 +132,7 @@
   {
     "name": "New Building",
     "category": "cities",
-    "price": 93.89,
+    "price": 53.89,
     "currency": "USD",
     "image": {
       "src": "/images/new-building.jpg",
@@ -106,7 +145,7 @@
   {
     "name": "Old Building",
     "category": "cities",
-    "price": 93.89,
+    "price": 23.89,
     "currency": "USD",
     "image": {
       "src": "/images/old-building.jpg",
@@ -117,9 +156,48 @@
     "details": null
   },
   {
+    "name": "Pets",
+    "category": "pets",
+    "price": 44.89,
+    "currency": "USD",
+    "image": {
+      "src": "/images/pets.jpg",
+      "alt": "pets"
+    },
+    "bestseller": false,
+    "featured": false,
+    "details": null
+  },
+  {
+    "name": "Pillar",
+    "category": "landmarks",
+    "price": 293.89,
+    "currency": "USD",
+    "image": {
+      "src": "/images/pillar.jpg",
+      "alt": "pillar"
+    },
+    "bestseller": false,
+    "featured": false,
+    "details": null
+  },
+  {
+    "name": "Pink Sky",
+    "category": "nature",
+    "price": 393.89,
+    "currency": "USD",
+    "image": {
+      "src": "/images/pink-sky.jpg",
+      "alt": "pink-sky"
+    },
+    "bestseller": false,
+    "featured": false,
+    "details": null
+  },
+  {
     "name": "Red Forest",
     "category": "nature",
-    "price": 93.89,
+    "price": 77.89,
     "currency": "USD",
     "image": {
       "src": "/images/red-forest.jpg",
@@ -132,7 +210,7 @@
   {
     "name": "Shoes",
     "category": "nature",
-    "price": 93.89,
+    "price": 593.89,
     "currency": "USD",
     "image": {
       "src": "/images/shoes.jpg",
@@ -143,9 +221,22 @@
     "details": null
   },
   {
+    "name": "Street",
+    "category": "cities",
+    "price": 63.89,
+    "currency": "USD",
+    "image": {
+      "src": "/images/street.jpg",
+      "alt": "street"
+    },
+    "bestseller": false,
+    "featured": false,
+    "details": null
+  },
+  {
     "name": "Water Street",
     "category": "nature",
-    "price": 93.89,
+    "price": 88.89,
     "currency": "USD",
     "image": {
       "src": "/images/water-street.jpg",
@@ -158,7 +249,7 @@
   {
     "name": "Window City",
     "category": "nature",
-    "price": 93.89,
+    "price": 211.89,
     "currency": "USD",
     "image": {
       "src": "/images/window-city.jpg",
@@ -171,7 +262,7 @@
   {
     "name": "Woman",
     "category": "nature",
-    "price": 93.89,
+    "price": 44.89,
     "currency": "USD",
     "image": {
       "src": "/images/woman.jpg",
@@ -184,7 +275,7 @@
   {
     "name": "Fire Girl",
     "category": "people",
-    "price": 93.89,
+    "price": 993.89,
     "currency": "USD",
     "image": {
       "src": "/images/fire-girl.jpg",
