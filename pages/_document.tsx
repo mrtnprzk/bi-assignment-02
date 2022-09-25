@@ -16,7 +16,7 @@ export default function Document() {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <body className="font-archivo lg:px-20 mt-28 bg-red-200 lg:bg-white">
+      <body className="font-archivo lg:px-20 mt-28 bg-white">
         <Main />
         <NextScript />
       </body>
