@@ -9,15 +9,10 @@ const Home: NextPage = () => {
     <>
       <Head>
         <title>BOHEMIA INTERACTIVE</title>
-        <meta
-          name="description"
-          content="Created by mrtnprzk for BOHEMIA INTERACTIVE"
-        />
-        <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Header/>
-      <FeaturedSection/>
-      <ProductsSection/>
+      <Header />
+      <FeaturedSection />
+      <ProductsSection />
     </>
   );
 };

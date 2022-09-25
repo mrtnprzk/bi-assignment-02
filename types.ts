@@ -1,4 +1,4 @@
-export interface Products {
+export interface Product {
   name: string;
   category: string;
   price: number;
@@ -9,7 +9,7 @@ export interface Products {
   };
   bestseller: boolean;
   featured: boolean;
-  details?: {
+  details: null | {
     dimmentions: {
       width: number;
       height: number;
