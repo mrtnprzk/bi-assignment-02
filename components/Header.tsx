@@ -5,10 +5,18 @@ const Header = () => {
   const [isOpened, setIsOpened] = useState(false);
 
   return (
-    <header className="bg-white fixed top-0 left-0 right-0 px-7 lg:px-0 lg:mx-20 z-10 border-b-4">
-      <nav className="flex justify-between items-center h-24 lg:h-28">
+    <header className="sticky top-0 px-7 bg-white lg:px-0 z-10 border-b-4">
+      <nav className="flex justify-between items-center bg-white h-24 lg:h-28">
         <h1 className="font-bold text-lg lg:text-2xl">BEJAMAS_</h1>
-        <button onClick={() => setIsOpened(true)}>CART</button>
+        <button className="relative" onClick={() => setIsOpened(true)}>
+          CART
+          <div
+            className="bg-black text-white font-bold absolute px-2 bottom-0 right-0"
+            style={{ transform: "translate(50%, 50%)" }}
+          >
+            1
+          </div>
+        </button>
       </nav>
       {isOpened && <ShoppingCart setIsOpened={setIsOpened} />}
     </header>

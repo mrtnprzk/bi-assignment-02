@@ -19,8 +19,8 @@ const FeaturedSection = () => {
           </div>
           <FeaturedImage src={product.image.src} alt={product.image.alt} />
           <button className="bg-black text-white w-full py-4 my-8 text-2xl block lg:hidden">
-              ADD TO CART
-            </button>
+            ADD TO CART
+          </button>
           <div className="flex flex-col justify-between text-xl lg:flex-row">
             <FeaturedAbout product={product} />
             <FeaturedDetails product={product} />

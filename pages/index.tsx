@@ -6,14 +6,14 @@ import ProductsSection from "../components/ProductsSection";
 
 const Home: NextPage = () => {
   return (
-    <>
+    <div className="max-w-[120rem]">
       <Head>
         <title>BOHEMIA INTERACTIVE</title>
       </Head>
       <Header />
       <FeaturedSection />
       <ProductsSection />
-    </>
+    </div>
   );
 };
 
