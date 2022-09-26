@@ -1,28 +1,14 @@
 import React from "react";
-import Image from "next/image";
 import storeProducts from "../data/products.json";
+import ProductCard from "./ProductCard";
 
 const ProductsPanel = () => {
   const products = storeProducts.filter((product) => !product.featured);
-
+  
   return (
-    <div className="w-5/6 grid gap-12 grid-cols-3 ml-12">
-      {products.map((product) => (
-        <div className="flex flex-col border">
-          <Image
-            key={product.name}
-            src={product.image.src}
-            alt={product.image.alt}
-            width={1100}
-            height={1600}
-          />
-          <button className="bg-black text-white w-full py-4 my-8 text-2xl">
-            ADD TO CART
-          </button>
-          <span>{product.category}</span>
-          <span>{product.name}</span>
-          <span>${product.price}</span>
-        </div>
+    <div className="grid gap-6 grid-cols-1 lg:gap-12 lg:grid-cols-3 lg:ml-12 lg:w-5/6">
+      {products.map((product, index) => (
+        <ProductCard key={index} product={product}/>
       ))}
     </div>
   );

@@ -2,7 +2,7 @@ import React from "react";
 
 const FilteringPanel = () => {
   return (
-    <div className="w-1/6">
+    <div className="hidden lg:block lg:w-1/6">
       <div>
         <h3>Category</h3>
         <div className="flex my-4 space-x-4">

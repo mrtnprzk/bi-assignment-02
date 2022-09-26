@@ -16,7 +16,7 @@ const FeaturedImage = ({ src, alt }: Props) => {
         height={1000}
         className="object-cover"
       />
-      <p className="bg-white absolute left-0 bottom-0 text-xl font-bold px-12 py-5 lg:px-14 lg:py-6">
+      <p className="bg-white absolute -left-1 bottom-0 text-xl font-bold px-10 py-4 lg:px-14 lg:py-6">
         Photo of the day
       </p>
     </div>

@@ -1,4 +1,7 @@
+import { ReactNode } from "react";
+
 export interface Product {
+  id: number;
   name: string;
   category: string;
   price: number;
@@ -31,4 +34,23 @@ export interface Product {
       }
     ];
   };
+}
+
+export interface CartItem {
+  id: number;
+}
+
+export interface ShoppingCartContextProps {
+  children: ReactNode;
+}
+
+export interface ShoppingCartContext {
+  cartItems: CartItem[];
+  openCart: () => void;
+  isOpen: boolean;
+  closeCart: () => void;
+  addToCart: (id: number) => void;
+  removeFromCart: (id: number) => void;
+  clearCart: () => void;
+  cartQuantity: number;
 }

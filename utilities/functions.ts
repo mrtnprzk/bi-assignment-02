@@ -1,6 +1,6 @@
-const currencyFormatter = new Intl.NumberFormat(undefined, {
-  currency: "USD",
+const currencyFormatter = new Intl.NumberFormat("en-HOSSDDG", {
   style: "currency",
+  currency: "USD",
 });
 
 export const formatCurrency = (number: number) => {
