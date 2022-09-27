@@ -12,12 +12,12 @@ const CartCard = ({ id }: Props) => {
   if (item == null) return null;
 
   return (
-    <div>
-      <div>
-        <p>{item.name}</p>
-        <p>{formatCurrency(item.price)}</p>
+    <div className="flex justify-between mt-6">
+      <div className="mt-2">
+        <p className="text-xl font-bold">{item.name}</p>
+        <p className="text-3xl text-gray-500">{formatCurrency(item.price)}</p>
       </div>
-      <Image src={item.image.src} alt={item.image.alt} width={50} height={50} />
+      <Image src={item.image.src} alt={item.image.alt} width={149} height={90} className="object-cover"/>
     </div>
   );
 };
