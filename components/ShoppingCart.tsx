@@ -12,7 +12,7 @@ const ShoppingCart = () => {
         onClick={closeCart}
         className="fixed top-0 bottom-0 left-0 right-0 hidden lg:block"
       ></div>
-      <div className="bg-white flex flex-col w-auto lg:w-[28rem] lg:p-6 border-4 fixed top-0 right-0 left-0 bottom-0 lg:left-auto lg:bottom-auto lg:mt-24 lg:mr-20">
+      <div className="bg-white flex flex-col w-auto p-2 border-4 fixed top-0 right-0 left-0 bottom-0 lg:p-6 lg:w-[28rem] lg:left-auto lg:bottom-auto lg:mt-24 lg:mr-20">
         <div className="text-right" >
           <button onClick={closeCart}><CloseIcon fontSize="large"/></button>
         </div>

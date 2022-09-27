@@ -1,59 +1,43 @@
 import React from "react";
 
 const FilteringPanel = () => {
+  const categories = [
+    { label: "People", value: "people" },
+    { label: "Premium", value: "premium" },
+    { label: "Pets", value: "pets" },
+    { label: "Food", value: "food" },
+    { label: "Landmarks", value: "landmarks" },
+    { label: "Cities", value: "cities" },
+    { label: "Nature", value: "nature" },
+  ];
+
+  const priceRange = [
+    { label: "Lower than $20" },
+    { label: "$20 - $100" },
+    { label: "$100 - $200" },
+    { label: "More than $200" },
+  ];
+
   return (
-    <div className="hidden lg:block lg:w-1/6">
-      <div>
-        <h3>Category</h3>
-        <div className="flex my-4 space-x-4">
-          <input type="checkbox" name="people" value="" />
-          <label htmlFor="people">People</label>
+    <>
+      <h3 className="font-bold">Category</h3>
+      {categories.map((category) => (
+        <div className="flex items-center space-x-4">
+          <input className="border-black text-black focus:ring-0 w-8 h-8 lg:w-4 lg:h-4" type="checkbox" name={category.value} value={category.value} />
+          <label htmlFor={category.value}>{category.label}</label>
         </div>
-        <div className="flex my-4 space-x-4">
-          <input type="checkbox" name="people" value="" />
-          <label htmlFor="people">Premium</label>
+      ))}
+
+      <div className="border-t-2"></div>
+
+      <h3 className="font-bold">Price Range</h3>
+      {priceRange.map((range) => (
+        <div className="flex items-center space-x-4">
+          <input className="border-black text-black focus:ring-0 w-8 h-8 lg:w-4 lg:h-4" type="checkbox" name={range.label} value={range.label} />
+          <label htmlFor={range.label}>{range.label}</label>
         </div>
-        <div className="flex my-4 space-x-4">
-          <input type="checkbox" name="people" value="" />
-          <label htmlFor="people">Pets</label>
-        </div>
-        <div className="flex my-4 space-x-4">
-          <input type="checkbox" name="people" value="" />
-          <label htmlFor="people">Food</label>
-        </div>
-        <div className="flex my-4 space-x-4">
-          <input type="checkbox" name="people" value="" />
-          <label htmlFor="people">Landmarks</label>
-        </div>
-        <div className="flex my-4 space-x-4">
-          <input type="checkbox" name="people" value="" />
-          <label htmlFor="people">Cities</label>
-        </div>
-        <div className="flex my-4 space-x-4">
-          <input type="checkbox" name="people" value="" />
-          <label htmlFor="people">Nature</label>
-        </div>
-      </div>
-      <div className="border-t-2">
-        <h3>Price Range</h3>
-        <div className="flex my-4 space-x-4">
-          <input type="checkbox" name="people" value="" />
-          <label htmlFor="people">Lower than $20</label>
-        </div>
-        <div className="flex my-4 space-x-4">
-          <input type="checkbox" name="people" value="" />
-          <label htmlFor="people">$20 - $100</label>
-        </div>
-        <div className="flex my-4 space-x-4">
-          <input type="checkbox" name="people" value="" />
-          <label htmlFor="people">$100 - $200</label>
-        </div>
-        <div className="flex my-4 space-x-4">
-          <input type="checkbox" name="people" value="" />
-          <label htmlFor="people">More than $200</label>
-        </div>
-      </div>
-    </div>
+      ))}
+    </>
   );
 };
 
