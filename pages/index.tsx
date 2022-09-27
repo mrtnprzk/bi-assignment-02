@@ -6,7 +6,7 @@ import ProductsSection from "../components/ProductsSection";
 
 const Home: NextPage = () => {
   return (
-    <div className="lg:max-w-[120rem]">
+    <div className="max-w-[120rem]">
       <Head>
         <title>BOHEMIA INTERACTIVE</title>
       </Head>

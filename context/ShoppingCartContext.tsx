@@ -22,9 +22,13 @@ export const ShoppingCartProvider = ({
 
   const closeCart = () => setisOpen(false);
 
+  const getItemQuantity = (id: number) => {
+    return cartItems.find(item => item.id === id)?.quantity || 0
+  }
+
   const addToCart = (id: number) => {
     setCartItems((currItems) => {
-      return [...currItems, { id }];
+      return [...currItems, { id, quantity: 1 }];
     });
     setisOpen(true);
   };
@@ -48,6 +52,7 @@ export const ShoppingCartProvider = ({
         openCart,
         closeCart,
         addToCart,
+        getItemQuantity,
         removeFromCart,
         clearCart,
         cartQuantity,

@@ -17,7 +17,7 @@ const CartCard = ({ id }: Props) => {
         <p>{item.name}</p>
         <p>{formatCurrency(item.price)}</p>
       </div>
-      <Image src={item.image.src} alt={item.image.alt} width={50} height={50}/>
+      <Image src={item.image.src} alt={item.image.alt} width={50} height={50} />
     </div>
   );
 };

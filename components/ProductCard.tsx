@@ -1,5 +1,5 @@
 import Image from "next/image";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { useShoppingCart } from "../context/ShoppingCartContext";
 import { Product } from "../types";
 import { formatCurrency } from "../utilities/functions";
@@ -9,7 +9,8 @@ interface Props {
 }
 
 const ProductCard = ({ product }: Props) => {
-  const { addToCart, removeFromCart } = useShoppingCart();
+  const { addToCart, removeFromCart, getItemQuantity } = useShoppingCart();
+  const itemQuantity = getItemQuantity(product.id);
 
   return (
     <div className="flex flex-col border">
@@ -21,18 +22,21 @@ const ProductCard = ({ product }: Props) => {
         height={570}
         className="object-cover"
       />
-      <button
-        onClick={() => addToCart(product.id)}
-        className="bg-black text-white w-full py-4 text-2xl"
-      >
-        ADD TO CART
-      </button>
-      <button
-        onClick={() => removeFromCart(product.id)}
-        className="bg-black text-white w-full py-4 text-2xl"
-      >
-        REMOVE FROM CART
-      </button>
+      {itemQuantity === 0 ? (
+        <button
+          onClick={() => addToCart(product.id)}
+          className="bg-black text-white w-full py-4 text-2xl"
+        >
+          ADD TO CART
+        </button>
+      ) : (
+        <button
+          onClick={() => removeFromCart(product.id)}
+          className="bg-black text-white w-full py-4 text-2xl"
+        >
+          REMOVE FROM CART
+        </button>
+      )}
       <span>{product.category}</span>
       <span>{product.name}</span>
       <span>{formatCurrency(product.price)}</span>

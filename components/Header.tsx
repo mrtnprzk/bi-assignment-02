@@ -11,12 +11,14 @@ const Header = () => {
         <h1 className="font-bold text-lg lg:text-2xl">BEJAMAS_</h1>
         <button className="relative" onClick={openCart}>
           CART
-          {cartQuantity ? <div
-            className="bg-black text-white font-bold absolute px-2 bottom-0 right-0"
-            style={{ transform: "translate(50%, 50%)" }}
-          >
-            {cartQuantity}
-          </div> : null}
+          {cartQuantity ? (
+            <div
+              className="bg-black text-white font-bold absolute px-2 bottom-0 right-0"
+              style={{ transform: "translate(50%, 50%)" }}
+            >
+              {cartQuantity}
+            </div>
+          ) : null}
         </button>
       </nav>
       {isOpen && <ShoppingCart />}

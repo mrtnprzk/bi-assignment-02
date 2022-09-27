@@ -38,6 +38,7 @@ export interface Product {
 
 export interface CartItem {
   id: number;
+  quantity: number;
 }
 
 export interface ShoppingCartContextProps {
@@ -50,6 +51,7 @@ export interface ShoppingCartContext {
   isOpen: boolean;
   closeCart: () => void;
   addToCart: (id: number) => void;
+  getItemQuantity: (id: number) => number;
   removeFromCart: (id: number) => void;
   clearCart: () => void;
   cartQuantity: number;
