@@ -9,7 +9,7 @@ const ProductsPanel = () => {
   ) as Product[];
 
   return (
-    <div className="grid gap-6 grid-cols-1 lg:gap-12 lg:grid-cols-3 lg:ml-12 lg:w-5/6">
+    <div className="grid gap-8 grid-cols-1 lg:gap-12 lg:grid-cols-3 lg:ml-12 lg:w-5/6">
       {products.map((product, index) => (
         <ProductCard key={index} product={product} />
       ))}

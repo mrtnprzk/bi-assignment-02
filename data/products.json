@@ -142,7 +142,7 @@
   {
     "id": 11,
     "name": "New Building",
-    "category": "cities",
+    "category": "landmarks",
     "price": 53.89,
     "currency": "USD",
     "image": {
@@ -156,7 +156,7 @@
   {
     "id": 12,
     "name": "Old Building",
-    "category": "cities",
+    "category": "landmarks",
     "price": 23.89,
     "currency": "USD",
     "image": {
@@ -226,7 +226,7 @@
   {
     "id": 17,
     "name": "Shoes",
-    "category": "nature",
+    "category": "premium",
     "price": 593.89,
     "currency": "USD",
     "image": {
@@ -254,7 +254,7 @@
   {
     "id": 19,
     "name": "Water Street",
-    "category": "nature",
+    "category": "cities",
     "price": 88.89,
     "currency": "USD",
     "image": {
@@ -268,7 +268,7 @@
   {
     "id": 20,
     "name": "Window City",
-    "category": "nature",
+    "category": "cities",
     "price": 211.89,
     "currency": "USD",
     "image": {
@@ -282,7 +282,7 @@
   {
     "id": 21,
     "name": "Woman",
-    "category": "nature",
+    "category": "people",
     "price": 44.89,
     "currency": "USD",
     "image": {

@@ -7,7 +7,7 @@ const Header = () => {
   const { isOpen, openCart, cartQuantity } = useShoppingCart();
 
   return (
-    <header className="sticky top-0 px-7 bg-white lg:px-0 z-10 border-b-4">
+    <header className="sticky top-0 px-7 bg-white lg:px-0 z-30 border-b-4">
       <nav className="flex justify-between items-center bg-white h-20 lg:h-24">
         <h1 className="font-bold text-lg lg:text-2xl">BEJAMAS_</h1>
         <button className="relative" onClick={openCart}>
