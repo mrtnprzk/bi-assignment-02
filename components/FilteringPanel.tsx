@@ -41,7 +41,7 @@ const FilteringPanel = () => {
           <input
             className="border-black text-black focus:ring-0 w-8 h-8 lg:w-4 lg:h-4"
             type="checkbox"
-            name={range.label}
+            name="price-range"
             value={range.label}
           />
           <label htmlFor={range.label}>{range.label}</label>

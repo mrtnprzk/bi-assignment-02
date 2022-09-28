@@ -6,6 +6,7 @@ import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 const Pagination = () => {
   const { currentPage, pageNumbers, prevPage, nextPage, clickedNumberPage } =
     useData();
+
   return (
     <div className="flex items-center mt-10 mb-10 space-x-5 mx-auto lg:mt-28">
       <button

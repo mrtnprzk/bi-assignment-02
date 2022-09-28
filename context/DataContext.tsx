@@ -26,11 +26,13 @@ export const DataProvider = ({ children }: DataContextProps) => {
   const productsPerPage = 6;
   const indexOfLastProduct = currentPage * productsPerPage;
   const indexOfFirstProduct = indexOfLastProduct - productsPerPage;
+
   const currentProducts = allProducts
     .sort((a, b) => {
       return order === "ASC" ? a.price - b.price : b.price - a.price;
     })
     .slice(indexOfFirstProduct, indexOfLastProduct);
+
   const pageNumbers = [];
   for (
     let index = 1;
@@ -62,7 +64,7 @@ export const DataProvider = ({ children }: DataContextProps) => {
         nextPage,
         prevPage,
         clickedNumberPage,
-        setOrder
+        setOrder,
       }}
     >
       {children}

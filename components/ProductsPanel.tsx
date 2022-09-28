@@ -13,7 +13,7 @@ const ProductsPanel = () => {
           <ProductCard key={index} product={product} />
         ))}
       </div>
-      <Pagination/>
+      <Pagination />
     </div>
   );
 };

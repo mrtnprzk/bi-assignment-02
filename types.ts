@@ -44,7 +44,7 @@ export interface DataContext {
   nextPage: () => void;
   prevPage: () => void;
   clickedNumberPage: (clickedNumber: number) => void;
-  setOrder: Dispatch<SetStateAction<string>>
+  setOrder: Dispatch<SetStateAction<string>>;
 }
 
 export interface DataContextProps {
