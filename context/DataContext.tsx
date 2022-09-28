@@ -18,15 +18,27 @@ export const DataProvider = ({ children }: DataContextProps) => {
     (product) => !product.featured
   ) as Product[];
 
+  //Sort by ASC/DESC
+  const [order, setOrder] = useState("ASC");
+  const sortByHandler = (order: string) => {
+    if (order === "desc") {
+      setOrder("DESC");
+    } else {
+      setOrder("ASC");
+    }
+    setCurrentPage(1);
+  };
+
   //Pagination
   const [currentPage, setCurrentPage] = useState(1);
   const productsPerPage = 6;
   const indexOfLastProduct = currentPage * productsPerPage;
   const indexOfFirstProduct = indexOfLastProduct - productsPerPage;
-  const currentProducts = allProducts.slice(
-    indexOfFirstProduct,
-    indexOfLastProduct
-  );
+  const currentProducts = allProducts
+    .sort((a, b) => {
+      return order === "ASC" ? a.price - b.price : b.price - a.price;
+    })
+    .slice(indexOfFirstProduct, indexOfLastProduct);
   const pageNumbers = [];
   for (
     let index = 1;
@@ -58,6 +70,7 @@ export const DataProvider = ({ children }: DataContextProps) => {
         nextPage,
         prevPage,
         clickedNumberPage,
+        sortByHandler,
       }}
     >
       {children}

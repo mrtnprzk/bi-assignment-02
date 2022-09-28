@@ -10,7 +10,7 @@ const Pagination = () => {
     <div className="flex items-center mt-10 mb-10 space-x-5 mx-auto lg:mt-28">
       <button
         onClick={prevPage}
-        className={`${currentPage === 1 && "text-gray-500"}`}
+        className={`${currentPage === 1 && "text-gray-300"}`}
         disabled={currentPage === 1 && true}
       >
         <ArrowBackIosIcon fontSize="medium" />
@@ -30,7 +30,7 @@ const Pagination = () => {
       </ul>
       <button
         onClick={nextPage}
-        className={`${currentPage === 4 && "text-gray-500"}`}
+        className={`${currentPage === 4 && "text-gray-300"}`}
         disabled={currentPage === 4 && true}
       >
         <ArrowForwardIosIcon fontSize="medium" />

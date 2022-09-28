@@ -44,6 +44,7 @@ export interface DataContext {
   nextPage: () => void;
   prevPage: () => void;
   clickedNumberPage: (clickedNumber: number) => void;
+  sortByHandler: (order: string) => void;
 }
 
 export interface DataContextProps {

@@ -73,7 +73,7 @@
     "id": 6,
     "name": "Dogo",
     "category": "pets",
-    "price": 23.89,
+    "price": 19.89,
     "currency": "USD",
     "image": {
       "src": "/images/dogo.jpg",
@@ -283,7 +283,7 @@
     "id": 21,
     "name": "Woman",
     "category": "people",
-    "price": 44.89,
+    "price": 7.39,
     "currency": "USD",
     "image": {
       "src": "/images/woman.jpg",

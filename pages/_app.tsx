@@ -6,9 +6,9 @@ import { DataProvider } from "../context/DataContext";
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <DataProvider>
-    <ShoppingCartProvider>
-      <Component {...pageProps} />
-    </ShoppingCartProvider>
+      <ShoppingCartProvider>
+        <Component {...pageProps} />
+      </ShoppingCartProvider>
     </DataProvider>
   );
 }
