@@ -17,7 +17,13 @@ const CartCard = ({ id }: Props) => {
         <p className="text-xl font-bold">{item.name}</p>
         <p className="text-3xl text-gray-500">{formatCurrency(item.price)}</p>
       </div>
-      <Image src={item.image.src} alt={item.image.alt} width={149} height={90} className="object-cover"/>
+      <Image
+        src={item.image.src}
+        alt={item.image.alt}
+        width={149}
+        height={90}
+        className="object-cover"
+      />
     </div>
   );
 };

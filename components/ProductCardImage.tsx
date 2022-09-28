@@ -21,7 +21,11 @@ const ProductCardImage = ({ product }: Props) => {
         height={670}
         className="object-cover"
       />
-      {product.bestseller && <span className="absolute bg-white text-xl top-0 py-1.5 px-8">Best Seller</span>}
+      {product.bestseller && (
+        <span className="absolute bg-white text-xl top-0 py-1.5 px-8">
+          Best Seller
+        </span>
+      )}
       {itemQuantity === 0 ? (
         <button
           onClick={() => addToCart(product.id)}

@@ -1,12 +1,9 @@
 import React from "react";
-import storeProducts from "../data/products.json";
-import { Product } from "../types";
+import { useData } from "../context/DataContext";
 import ProductCard from "./ProductCard";
 
 const ProductsPanel = () => {
-  const products: Product[] = storeProducts.filter(
-    (product) => !product.featured
-  ) as Product[];
+  const { products } = useData();
 
   return (
     <div className="grid gap-8 grid-cols-1 md:grid-cols-2 lg:gap-12 lg:grid-cols-3 lg:ml-12 lg:w-4/5">

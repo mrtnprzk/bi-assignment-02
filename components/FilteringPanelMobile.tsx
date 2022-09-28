@@ -8,8 +8,8 @@ interface Props {
 
 const FilteringPanelMobile = ({ setIsMobileFilter }: Props) => {
   return (
-    <div className="bg-white fixed top-0 bottom-0 left-0 right-0 pb-40 overflow-auto z-50 lg:hidden">
-      <div className="overflow-auto text-3xl space-y-6 p-8">
+    <div className="bg-white fixed top-0 bottom-0 left-0 right-0 overflow-auto z-50 lg:hidden">
+      <div className="overflow-auto text-3xl space-y-6 p-8 pb-40">
         <div className="flex justify-between">
           <h4 className="text-4xl font-bold">Filter</h4>
           <button onClick={() => setIsMobileFilter(false)}>

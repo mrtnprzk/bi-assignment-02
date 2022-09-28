@@ -1,7 +1,7 @@
 import React from "react";
 import { useShoppingCart } from "../context/ShoppingCartContext";
 import CartCard from "./CartCard";
-import CloseIcon from '@mui/icons-material/Close';
+import CloseIcon from "@mui/icons-material/Close";
 
 const ShoppingCart = () => {
   const { cartItems, cartQuantity, closeCart, clearCart } = useShoppingCart();
@@ -13,8 +13,10 @@ const ShoppingCart = () => {
         className="fixed top-0 bottom-0 left-0 right-0 hidden lg:block"
       ></div>
       <div className="bg-white flex flex-col w-auto p-2 border-4 fixed top-0 right-0 left-0 bottom-0 lg:p-6 lg:w-[28rem] lg:left-auto lg:bottom-auto lg:mt-24 lg:mr-20">
-        <div className="text-right" >
-          <button onClick={closeCart}><CloseIcon fontSize="large"/></button>
+        <div className="text-right">
+          <button onClick={closeCart}>
+            <CloseIcon fontSize="large" />
+          </button>
         </div>
         {cartQuantity !== 0 ? (
           <>

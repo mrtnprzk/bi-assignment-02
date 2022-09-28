@@ -36,6 +36,15 @@ export interface Product {
   };
 }
 
+export interface DataContext {
+  featuredProduct: Product;
+  products: Product[];
+}
+
+export interface DataContextProps {
+  children: ReactNode;
+}
+
 export interface CartItem {
   id: number;
   quantity: number;

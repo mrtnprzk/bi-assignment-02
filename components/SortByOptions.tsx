@@ -10,7 +10,7 @@ const SortByOptions = () => {
       </span>
       <select className="text-black border-none text-xl w-fit">
         <option selected>Name</option>
-        <option >Price</option>
+        <option>Price</option>
       </select>
     </div>
   );

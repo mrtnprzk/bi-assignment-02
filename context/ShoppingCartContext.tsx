@@ -23,8 +23,8 @@ export const ShoppingCartProvider = ({
   const closeCart = () => setisOpen(false);
 
   const getItemQuantity = (id: number) => {
-    return cartItems.find(item => item.id === id)?.quantity || 0
-  }
+    return cartItems.find((item) => item.id === id)?.quantity || 0;
+  };
 
   const addToCart = (id: number) => {
     setCartItems((currItems) => {

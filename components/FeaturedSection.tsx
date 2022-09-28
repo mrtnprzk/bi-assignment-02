@@ -1,17 +1,13 @@
 import React from "react";
-import storeProducts from "../data/products.json";
 import FeaturedAbout from "./FeaturedAbout";
 import FeaturedDetails from "./FeaturedDetails";
 import FeaturedImage from "./FeaturedImage";
 import { useShoppingCart } from "../context/ShoppingCartContext";
-import { Product } from "../types";
+import { useData } from "../context/DataContext";
 
 const FeaturedSection = () => {
   const { addToCart, removeFromCart, getItemQuantity } = useShoppingCart();
-
-  const featuredProduct: Product = storeProducts.find(
-    (product) => product.featured
-  ) as Product;
+  const { featuredProduct } = useData();
 
   const itemQuantity = getItemQuantity(featuredProduct.id);
 
