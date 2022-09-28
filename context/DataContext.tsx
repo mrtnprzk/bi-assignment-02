@@ -20,14 +20,6 @@ export const DataProvider = ({ children }: DataContextProps) => {
 
   //Sort by ASC/DESC
   const [order, setOrder] = useState("ASC");
-  const sortByHandler = (order: string) => {
-    if (order === "desc") {
-      setOrder("DESC");
-    } else {
-      setOrder("ASC");
-    }
-    setCurrentPage(1);
-  };
 
   //Pagination
   const [currentPage, setCurrentPage] = useState(1);
@@ -70,7 +62,7 @@ export const DataProvider = ({ children }: DataContextProps) => {
         nextPage,
         prevPage,
         clickedNumberPage,
-        sortByHandler,
+        setOrder
       }}
     >
       {children}

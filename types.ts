@@ -1,4 +1,4 @@
-import { ReactNode } from "react";
+import { ReactNode, Dispatch, SetStateAction } from "react";
 
 export interface Product {
   id: number;
@@ -44,7 +44,7 @@ export interface DataContext {
   nextPage: () => void;
   prevPage: () => void;
   clickedNumberPage: (clickedNumber: number) => void;
-  sortByHandler: (order: string) => void;
+  setOrder: Dispatch<SetStateAction<string>>
 }
 
 export interface DataContextProps {
