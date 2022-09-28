@@ -1,15 +1,19 @@
 import React from "react";
 import { useData } from "../context/DataContext";
+import Pagination from "./Pagination";
 import ProductCard from "./ProductCard";
 
 const ProductsPanel = () => {
-  const { products } = useData();
+  const { currentProducts } = useData();
 
   return (
-    <div className="grid gap-8 grid-cols-1 md:grid-cols-2 lg:gap-12 lg:grid-cols-3 lg:ml-12 lg:w-4/5">
-      {products.map((product, index) => (
-        <ProductCard key={index} product={product} />
-      ))}
+    <div className="flex flex-col lg:ml-12 lg:w-4/5">
+      <div className="grid gap-8 grid-cols-1 md:grid-cols-2 lg:gap-12 lg:grid-cols-3">
+        {currentProducts.map((product, index) => (
+          <ProductCard key={index} product={product} />
+        ))}
+      </div>
+      <Pagination/>
     </div>
   );
 };

@@ -21,8 +21,8 @@ const FilteringPanel = () => {
   return (
     <>
       <h3 className="font-bold">Category</h3>
-      {categories.map((category) => (
-        <div className="flex items-center space-x-4">
+      {categories.map((category, i) => (
+        <div key={i} className="flex items-center space-x-4">
           <input
             className="border-black text-black focus:ring-0 w-8 h-8 lg:w-4 lg:h-4"
             type="checkbox"
@@ -36,8 +36,8 @@ const FilteringPanel = () => {
       <div className="border-t-2"></div>
 
       <h3 className="font-bold">Price Range</h3>
-      {priceRange.map((range) => (
-        <div className="flex items-center space-x-4">
+      {priceRange.map((range, i) => (
+        <div key={i} className="flex items-center space-x-4">
           <input
             className="border-black text-black focus:ring-0 w-8 h-8 lg:w-4 lg:h-4"
             type="checkbox"

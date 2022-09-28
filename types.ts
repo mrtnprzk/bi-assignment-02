@@ -38,7 +38,12 @@ export interface Product {
 
 export interface DataContext {
   featuredProduct: Product;
-  products: Product[];
+  currentProducts: Product[];
+  currentPage: number;
+  pageNumbers: number[];
+  nextPage: () => void;
+  prevPage: () => void;
+  clickedNumberPage: (clickedNumber: number) => void;
 }
 
 export interface DataContextProps {

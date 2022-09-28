@@ -9,7 +9,7 @@ const ProductsSection = () => {
   const [isMobileFilter, setIsMobileFilter] = useState(false);
 
   return (
-    <div className="px-4 py-8 lg:px-0 lg:py-0">
+    <div className="px-4 py-8 lg:px-0 lg:py-0" id="product-section">
       <div className="flex justify-between items-center mb-5 lg:mb-0 lg:py-16">
         <div className="flex items-center text-lg font-bold lg:text-3xl">
           <span>Photography</span>
