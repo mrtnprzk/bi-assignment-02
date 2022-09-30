@@ -3,12 +3,10 @@ import FeaturedAbout from "./FeaturedAbout";
 import FeaturedDetails from "./FeaturedDetails";
 import FeaturedImage from "./FeaturedImage";
 import { useShoppingCart } from "../context/ShoppingCartContext";
-import { useData } from "../context/DataContext";
+import { featuredProduct } from "../data/products";
 
 const FeaturedSection = () => {
   const { addToCart, removeFromCart, getItemQuantity } = useShoppingCart();
-  const { featuredProduct } = useData();
-
   const itemQuantity = getItemQuantity(featuredProduct.id);
 
   return (

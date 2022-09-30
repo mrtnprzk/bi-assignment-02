@@ -15,7 +15,7 @@ export default function Document() {
           crossOrigin="true"
         />
         <link
-          href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;600;700&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;600;700&family=Pacifico&display=swap"
           rel="stylesheet"
         />
         <link rel="icon" href="/favicon.ico" />

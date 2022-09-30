@@ -8,6 +8,7 @@ module.exports = {
     extend: {
       fontFamily: {
         archivo: ["Archivo", "sans-serif"],
+        pacifico: ["Pacifico", "cursive"],
       },
     },
   },

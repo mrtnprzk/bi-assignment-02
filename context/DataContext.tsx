@@ -1,6 +1,6 @@
 import { createContext, useContext, useState } from "react";
-import storeProducts from "../data/products.json";
-import { Product, DataContext, DataContextProps } from "../types";
+import { allProducts } from "../data/products";
+import { DataContext, DataContextProps } from "../types";
 
 const DataContext = createContext({} as DataContext);
 
@@ -9,31 +9,13 @@ export const useData = () => {
 };
 
 export const DataProvider = ({ children }: DataContextProps) => {
-  //Data
-  const featuredProduct = storeProducts.find(
-    (product) => product.featured
-  ) as Product;
-
-  const allProducts = storeProducts.filter(
-    (product) => !product.featured
-  ) as Product[];
-
-  //Sort by ASC/DESC
-  const [order, setOrder] = useState("ASC");
-
-  //Pagination
-  const [currentPage, setCurrentPage] = useState(1);
+  const [order, setOrder] = useState("ASC"); //Sort by ASC/DESC
+  const [currentPage, setCurrentPage] = useState(1); //Pagination
   const productsPerPage = 6;
   const indexOfLastProduct = currentPage * productsPerPage;
   const indexOfFirstProduct = indexOfLastProduct - productsPerPage;
-
-  const currentProducts = allProducts
-    .sort((a, b) => {
-      return order === "ASC" ? a.price - b.price : b.price - a.price;
-    })
-    .slice(indexOfFirstProduct, indexOfLastProduct);
-
   const pageNumbers = [];
+
   for (
     let index = 1;
     index <= Math.ceil(allProducts.length / productsPerPage);
@@ -41,6 +23,16 @@ export const DataProvider = ({ children }: DataContextProps) => {
   ) {
     pageNumbers.push(index);
   }
+
+  //FUNCTIONS
+  const sortByHandler = (order: string) => {
+    if (order === "DESC") {
+      setOrder("DESC");
+    } else {
+      setOrder("ASC");
+    }
+    setCurrentPage(1);
+  };
 
   const nextPage = () => {
     setCurrentPage((currPage) => currPage + 1);
@@ -54,17 +46,23 @@ export const DataProvider = ({ children }: DataContextProps) => {
     setCurrentPage(clickedNumber);
   };
 
+  //Current Products
+  const currentProducts = allProducts
+    .sort((a, b) => {
+      return order === "ASC" ? a.price - b.price : b.price - a.price;
+    })
+    .slice(indexOfFirstProduct, indexOfLastProduct);
+
   return (
     <DataContext.Provider
       value={{
-        featuredProduct,
         currentProducts,
         currentPage,
         pageNumbers,
+        sortByHandler,
         nextPage,
         prevPage,
         clickedNumberPage,
-        setOrder,
       }}
     >
       {children}

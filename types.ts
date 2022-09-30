@@ -37,14 +37,13 @@ export interface Product {
 }
 
 export interface DataContext {
-  featuredProduct: Product;
   currentProducts: Product[];
   currentPage: number;
   pageNumbers: number[];
+  sortByHandler: (order: string) => void;
   nextPage: () => void;
   prevPage: () => void;
   clickedNumberPage: (clickedNumber: number) => void;
-  setOrder: Dispatch<SetStateAction<string>>;
 }
 
 export interface DataContextProps {

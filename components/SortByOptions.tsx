@@ -3,7 +3,7 @@ import SwapVertOutlinedIcon from "@mui/icons-material/SwapVertOutlined";
 import { useData } from "../context/DataContext";
 
 const SortByOptions = () => {
-  const { setOrder } = useData();
+  const { sortByHandler } = useData();
 
   return (
     <div className="hidden lg:block text-xl text-gray-500">
@@ -12,7 +12,7 @@ const SortByOptions = () => {
         Sort By
       </span>
       <select
-        onChange={(e) => setOrder(e.target.value)}
+        onChange={(e) => sortByHandler(e.target.value)}
         className="text-black border-none text-xl w-fit focus:ring-0"
       >
         <option value="ASC">Price: Low to High</option>
