@@ -17,17 +17,17 @@ const ProductsSection = () => {
           <span className="text-gray-500 font-normal">Premium Photos</span>
         </div>
         <SortByOptions />
-        <button className="lg:hidden" onClick={() => setIsMobileFilter(true)}>
+        {/* <button className="lg:hidden" onClick={() => setIsMobileFilter(true)}>
           <TuneIcon fontSize="large" />
-        </button>
+        </button> HIDDEN TILL IS WORKING */}
       </div>
       <div className="flex">
         {isMobileFilter && (
           <FilteringPanelMobile setIsMobileFilter={setIsMobileFilter} />
         )}
-        <div className="hidden text-xl lg:block lg:w-1/5 space-y-5">
+        {/* <div className="hidden text-xl lg:block lg:w-1/5 space-y-5">
           <FilteringPanel />
-        </div>
+        </div> HIDDEN TILL IS WORKING */}
         <ProductsPanel />
       </div>
     </div>
