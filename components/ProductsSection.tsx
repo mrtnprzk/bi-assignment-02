@@ -10,7 +10,8 @@ const ProductsSection = () => {
 
   return (
     <div className="px-4 py-8 lg:px-0 lg:py-0" id="product-section">
-      <div className="flex justify-between items-center mb-5 lg:mb-0 lg:py-16">
+      <div className="flex flex-col md:flex-row md:justify-between md:items-center mb-5 lg:mb-0 lg:py-16">
+      {/* <div className="flex justify-between items-center mb-5 lg:mb-0 lg:py-16"> HIDDEN TILL IS WORKING */}
         <div className="flex items-center text-lg font-bold lg:text-3xl">
           <span>Photography</span>
           <span className="text-3xl lg:text-4xl">&nbsp;/&nbsp;</span>

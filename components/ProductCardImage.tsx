@@ -18,8 +18,8 @@ const ProductCardImage = ({ product }: Props) => {
         key={product.name}
         src={product.image.src}
         alt={product.image.alt}
-        width={480}
-        height={670}
+        width={740}
+        height={1000}
         className="object-cover"
       />
       {product.bestseller && (
