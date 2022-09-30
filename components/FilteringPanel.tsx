@@ -18,6 +18,14 @@ const FilteringPanel = () => {
     { label: "More than $200" },
   ];
 
+  const selectOnlyThis = (id: any) => {
+    var myCheckbox = document.getElementsByName("price-range");
+    Array.prototype.forEach.call(myCheckbox, (el) => {
+      el.checked = false;
+    });
+    id.checked = true;
+  };
+
   return (
     <>
       <h3 className="font-bold">Category</h3>
@@ -43,6 +51,7 @@ const FilteringPanel = () => {
             type="checkbox"
             name="price-range"
             value={range.label}
+            onClick={(e) => selectOnlyThis(e.target)}
           />
           <label htmlFor={range.label}>{range.label}</label>
         </div>

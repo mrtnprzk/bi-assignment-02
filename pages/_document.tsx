@@ -6,7 +6,7 @@ export default function Document() {
       <Head>
         <meta
           name="description"
-          content="Created by mrtnprzk for BOHEMIA INTERACTIVE"
+          content="Created by mrtnprzk"
         />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link

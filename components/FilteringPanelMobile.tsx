@@ -1,6 +1,7 @@
 import React from "react";
 import FilteringPanel from "./FilteringPanel";
 import CloseIcon from "@mui/icons-material/Close";
+import SortByOptions from "./SortByOptions";
 
 interface Props {
   setIsMobileFilter: React.Dispatch<React.SetStateAction<boolean>>;
